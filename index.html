@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Master Liu" />
+
+
+    
+    
+
+
+<meta name="description" content="HEXIO搭建个人网站">
+<meta name="keywords" content="hexo  个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HEXO搭建网站">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;index.html">
+<meta property="og:site_name" content="HEXO搭建网站">
+<meta property="og:description" content="HEXIO搭建个人网站">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="HEXO搭建网站" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <style> .article { opacity: 0;} </style>
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>HEXO搭建网站</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: true,
+        isPost: false,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: false
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+      
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">Master Liu</a></h1>
+        </hgroup>
+
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                            <li><a href="/shouce/">手册</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:123@123.com" target="_blank" rel="noopener" title="Email"></a>
+                            
+                                <a class="fa 天启工业云" href="/www.ecsiot.com" title="天启工业云"></a>
+                            
+                                <a class="fa 新浪微博" href="/sina%20weibo" title="新浪微博"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io" target="_blank" rel="noopener">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/" target="_blank" rel="noopener">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/" target="_blank" rel="noopener">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Master Liu</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Master Liu</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                    <li><a href="/shouce/">手册</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa 天启工业云" target="_blank" href="/www.ecsiot.com" title="天启工业云"></a>
+                            
+                                <a class="fa 新浪微博" target="_blank" href="/sina%20weibo" title="新浪微博"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-TN-330" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/tn-330/index.html" class="article-date">
+      <time datetime="2019-11-15T05:50:06.000Z" itemprop="datePublished">2019-11-15</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/tn-330/index.html">TN-330</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>#TN-330 使用手册</p>
+<p>##第一章产品介绍<br>&nbsp;&nbsp;&nbsp;&nbsp;本章主要介绍TN-6的外观、配件、规格参数和使用原理。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1、产品外观</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2、外观</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3、安装尺寸  </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4、规格参数<br>###1.1 产品简介<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TN-330 是采用工业级设计，专门为工业PLC产品配套使用，为具备RJ-45网口、RS232、RS485的PLC产品提供远程下载程序和远程数据采集功能，如西门子、三菱、欧姆龙、松下、台达、永宏等品牌的PLC，通过高速的4G、WAN、WIFI等网络    ，结合PLC配套软件或工业云平台，实现远程下载程序、采集数据。</p>
+<p>###1.2 产品外观</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;此图为TN-330外观，具体外观根据型号略有差别。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/TN330/330wx.png" alt="TN605图片"></p>
+<p>####1.2.1 指示灯说明<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/TN330/330zsdsm.png" alt="指示灯说明"></p>
+<p>####1.2.2 接口说明<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电源接口： 输入电压 DC24V;</p>
+<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>RS485 接口：</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A–&gt;外部设备RS485+   ；   B–&gt;外部设备RS485-</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>RS232 接口：</strong></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TX–&gt;外部设备RX  ；  RX–&gt;外部设备TX  ；  GND–&gt;外部设备GND</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;复位按键：长按 Reset（复位）按键 5s，数据通讯灯和 2 个信号质量同时快闪 5 次之后停止闪烁，系统成功恢复出厂状态。LAN 口 IP 地址恢复为 192.168.10.1，用户的设置全部被清空。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WAN/LAN 网口：用于连接云服务器，也可连接 PC（出厂IP默认为192.168.10.1）。<br>###1.3 产品尺寸<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/TN330/wxcc.png" alt="外形尺寸"></p>
+<p>导轨安装：适合 35mmDIN 导轨安装，居中安装。先将 TN-330 卡座的上部卡入导轨，然后用力下拉，直接卡住即可；</p>
+<p>###1.4 规格参数</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.4.1 硬件参数</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  CPU &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ARM9 嵌入式低功耗 CPU，主频 528MHz</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  内存&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 256M DDR3 512M Flash</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  保护    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;双重看门狗管理</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  无线接入方式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    4G    </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  通讯端口    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RS485    RS232    </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.4.2 电气规格</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  额定电压     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DC 24V,可工作范围 DC 9V～36V</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  额定功率 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    &lt; 5W</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  电源保护         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;具备雷击浪涌保护</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.4.3 环境要求</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  EMC 性能     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      符合 EN61000-6-2:2005，EN61000-6-4:2007 标准，群脉冲 2KV；静电接</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  工作温度 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    -20～70°C</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  存储温度     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-40～80°C</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  环境湿度 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    10～90%RH(无冷凝)    </p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;☆  冷却方式&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    自然风冷    </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-index" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/index/index.html" class="article-date">
+      <time datetime="2019-11-15T05:50:06.000Z" itemprop="datePublished">2019-11-15</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/index/index.html">index</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="云平台连接操作步骤"><a href="#云平台连接操作步骤" class="headerlink" title="云平台连接操作步骤"></a>云平台连接操作步骤</h1><p><img src="png/czlc.png" alt="操作流程"></p>
+<h2 id="申请账户"><a href="#申请账户" class="headerlink" title="申请账户"></a>申请账户</h2><p>云平台账号申请地址：<a href="https://cloud.ecsiot.com" target="_blank" rel="noopener" title="云平台申请地址">https://cloud.ecsiot.com</a></p>
+<p>输入公司信息+账户名+密码+手机验证码，如下图:</p>
+<p><img src="png/cloud/sqzh.png" alt="注册账户"></p>
+<p>点击 “提交申请” ，然后联系销售或者技术支持，予以通过。</p>
+<h2 id="添加项目"><a href="#添加项目" class="headerlink" title="添加项目"></a>添加项目</h2><p>用申请的账户登录云平台，登录地址：<a href="https://cloud.ecsiot.com" target="_blank" rel="noopener" title="云平台登陆地址">https://cloud.ecsiot.com</a></p>
+<pre><code>进入云平台之后，点击“项目中心”--页面左下角的“添加项目”
+
+输入： 1. 项目名称； 2. 地理位置（可选项）</code></pre><p>**新项目默认‘自由项目’即可。如果需要调用已有项目或模板项目，根据需要选择。</p>
+<p>名词解释： </p>
+<pre><code>1，域：选择“默认域”即可。**域的添加请参考！**
+
+2，自由项目：完全创建一个新的空白项目；
+
+3，复制项目：复制一个之前做好的某一个项目
+
+4，模板项目：这个项目关联到某一个模板之上（如果没有使用模板管理功能，忽略此选项）</code></pre><p><img src="gif/cloud/tjxm.gif" alt="添加项目"></p>
+<h2 id="添加变量"><a href="#添加变量" class="headerlink" title="添加变量"></a>添加变量</h2><h3 id="下载ECSManger软件"><a href="#下载ECSManger软件" class="headerlink" title="下载ECSManger软件"></a>下载ECSManger软件</h3><p>下载地址：<a href="http://mcn.ecsiot.com/download/ECSManager.exe" target="_blank" rel="noopener">点击此处下载</a></p>
+<h3 id="安装ECSManager软件"><a href="#安装ECSManager软件" class="headerlink" title="安装ECSManager软件"></a>安装ECSManager软件</h3><pre><code>下载成功--安装完成--登录账户（与云平台账户一致）--选择需要配置的项目</code></pre><p><img src="png/cloud/dlzh.png" alt="登录账户"></p>
+<pre><code>新建--右键BOX列表--添加BOX</code></pre><p>TN310、TN605、TN530、TN630、TN730需要只需选择BOX型号即可。上网方式以及LAN口IP设置需要在网页中配置。</p>
+<p>TN330需要设置上传模式：4G、wifi、以太网三种模式，根据现场实际情况以及BOX支持网络方式填写。</p>
+<p><img src="png/cloud/tjbox.png" alt="添加BOX"></p>
+<p>备注：#的可以不填写，*为必填项</p>
+<h3 id="串口设备"><a href="#串口设备" class="headerlink" title="串口设备"></a><strong>串口设备</strong></h3><p>以三菱FX-2N为例</p>
+<h4 id="设置串口参数"><a href="#设置串口参数" class="headerlink" title="设置串口参数"></a>设置串口参数</h4><pre><code>串口设置操作步骤一样</code></pre><p><img src="png/cloud/szckcs.png" alt="设置串口参数"></p>
+<h4 id="添加设备"><a href="#添加设备" class="headerlink" title="添加设备"></a>添加设备</h4><pre><code>选中RS232单机右键，添加PLC设备</code></pre><p><img src="png/cloud/tjsb.png" alt="添加设备"></p>
+<h4 id="添加变量-1"><a href="#添加变量-1" class="headerlink" title="添加变量"></a>添加变量</h4><pre><code>鼠标选中设备层，空白处单机右键，添加变量</code></pre><p><img src="png/cloud/tjbl.png" alt="添加变量"></p>
+<p>如果需要对变量进行线性变化、报警配置、存储配置、权限配置，点击相应按钮即可。</p>
+<p><img src="png/cloud/tjbl2.png" alt="添加变量2"></p>
+<h3 id="网口设备"><a href="#网口设备" class="headerlink" title="网口设备"></a><strong>网口设备</strong></h3><p>以西门子S7-Smart为例</p>
+<h4 id="设置BOX的IP地址"><a href="#设置BOX的IP地址" class="headerlink" title="设置BOX的IP地址"></a>设置BOX的IP地址</h4><p><strong>当BOX模块为TN-730、TN-630、TN-530、TN-605时，LAN口IP设置：</strong><br><a href="LAN口IP设置.md">请点击此处查看详细操作步骤！</a></p>
+<p><strong>当BOX模块为TN-330时，直接配置WAN口IP即可。</strong></p>
+<p><img src="png/cloud/xgplcip.png" alt="修改PLCip"></p>
+<h4 id="单机右键添加PLC"><a href="#单机右键添加PLC" class="headerlink" title="单机右键添加PLC"></a>单机右键添加PLC</h4><p>根据连接设备选择相应的驱动，如果没有选择Modbus TCP，相应的设备也必须驱动为Moudbus TCP 服务端。<br><img src="png/cloud/tjwkplc.png" alt="添加网口PLC"></p>
+<h4 id="添加变量-2"><a href="#添加变量-2" class="headerlink" title="添加变量"></a>添加变量</h4><p><img src="png/cloud/tjwkbl.png" alt="添加网口变量"></p>
+<h2 id="下载上传配置信息"><a href="#下载上传配置信息" class="headerlink" title="下载上传配置信息"></a>下载上传配置信息</h2><p><strong>远程下载配置信息：</strong><a href="远程连接BOX.md">请点击此处查看详情</a></p>
+<h3 id="下载配置软件"><a href="#下载配置软件" class="headerlink" title="下载配置软件"></a>下载配置软件</h3><p>电脑连接采集器的LAN口IP地址，电脑本地连接的IPV4的IP地址更改为（192.168.10.X）或者更改为自动获取，点击“下载至采集器”，在弹出的对话框中输入BOX模块当前的IP地址（默认为：192.168.10.1）。新建项目会提示保存文件，选择保存，然后继续下载即可。</p>
+<p><img src="png/cloud/xzzbox.png" alt="下载至BOX"></p>
+<p>备注：1：下载的时候会提示采集器序列号为空，属于正常提示   　　2：下载完成之后，采集器系统会初始化，请20s后再连接。</p>
+<h3 id="监视PLC与BOX连接状态"><a href="#监视PLC与BOX连接状态" class="headerlink" title="监视PLC与BOX连接状态"></a>监视PLC与BOX连接状态</h3><p style="color: red;font-size: large;">此步骤一般不用操作</p>
+
+<p>点击“监视”按钮，弹出的对话框输入BOX模块当前的IP地址：（默认：192.168.10.1）</p>
+<p>监视：监视的作用是判断PLC与BOX模块连接通讯是否正常。与模块有网络和云平台没有关系。</p>
+<p><img src="png/cloud/js.png" alt="监视"></p>
+<h3 id="上传至云端"><a href="#上传至云端" class="headerlink" title="上传至云端"></a>上传至云端</h3><p><img src="png/cloud/sczyd.png" alt="上传至云端"></p>
+<h3 id="进入云平台"><a href="#进入云平台" class="headerlink" title="进入云平台"></a>进入云平台</h3><p>支持的浏览器：google、360(极速模式)、搜狗，云平台网址：<a href="cloud.ecsiot.com" title="工业互联云">cloud.ecsiot.com</a></p>
+<pre><code>1. 打开浏览器。
+
+2. 输入网站：cloud.ecsiot.com。
+
+3. 输入账号密码。</code></pre><h2 id="查看BOX状态"><a href="#查看BOX状态" class="headerlink" title="查看BOX状态"></a>查看BOX状态</h2><pre><code>依次点击：项目中心--选择查看项目--数据监控--实时数据，查看数据状态，绿色代表连接正常，红色代表异常。
+
+出现异常查看BOX状态。</code></pre><p><img src="png/cloud/boxblzt.png" alt="BOX变量状态"></p>
+<p><strong>查看BOX状态</strong></p>
+<p>如果“变量信息”的状态显示红色，则查看BOX信息：</p>
+<pre><code>实时状态：                         在线  模块有网络
+
+                                  离线  模块无网络，请确保模块上网（手机卡流量、wifi密码信息、Wan口是否需要设置）
+
+西门子smart（设备名称，各项目不定）： 绿色  BOX与PLC等设备连接正常
+
+                                  红色  BOX与模块通讯异常（确保ECS软件配置的协议或IP与PLC一致）</code></pre><p><img src="png/cloud/boxzt.png" alt="BOX状态"></p>
+<h2 id="组态画面"><a href="#组态画面" class="headerlink" title="组态画面"></a>组态画面</h2><p>画面组态详细操作请前往《云平台画面组态》查看！：<a href="scada_help.md">画面组态详情请点击！</a></p>
+<p>当云平台实时数据监视正常，则开始绘制组态画面</p>
+<p><img src="png/cloud/jrzt.png" alt="进入组态"></p>
+<p>绘制完成之后，选择电脑端的起始画面和手机端的起始画面。</p>
+<p>如果需要将画面某页加入到集中监控中  ，勾选即可。</p>
+<p><img src="png/cloud/hmxz.png" alt="画面选择"></p>
+<h2 id="电脑端查看"><a href="#电脑端查看" class="headerlink" title="电脑端查看"></a>电脑端查看</h2><p><img src="png/pcsbjk.png" alt="电脑端查看"></p>
+<h2 id="手机端查看"><a href="#手机端查看" class="headerlink" title="手机端查看"></a>手机端查看</h2><p>先关注我公司公众号，然后打开微信，找到小程序</p>
+<pre><code>天启工业云--绑定新账户--输入账户名和密码--绑定成功之后--进入项目--选择项目--导航栏选择
+查看即可。</code></pre><p><img src="png/wx/xmxz.png" alt="小程序查看"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-simens" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/simens/index.html" class="article-date">
+      <time datetime="2019-11-15T05:50:06.000Z" itemprop="datePublished">2019-11-15</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/simens/index.html">simens</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="S7-1200与TN730连接云平台操作步骤"><a href="#S7-1200与TN730连接云平台操作步骤" class="headerlink" title="S7-1200与TN730连接云平台操作步骤"></a>S7-1200与TN730连接云平台操作步骤</h1><p>##</p>
+<p>###1.1博途软件建立设备组态时注意点</p>
+<p>博途软件中设备组态时，需要将CPU属性里面的“保护”中的连接机制中的：“允许来自远程对象（PLC、HMI、OPC….）”的PUT/GET通信访问”勾选上。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/simens/seting.png" alt="simens"></p>
+<p>在建立DB等块时，必须将DB块的属性里面的“优化的块访问”取消勾选。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/simens/seting1.png" alt="simens"></p>
+<p>###1.2模块配置</p>
+<p>使用直连或交叉网线将TN-730的LAN口与电脑连接</p>
+<p>打开电脑，设定电脑的IP地址与TN-730的IP地址处于同一网段。TN-730出厂默认IP为192.168.10.1，此时将电脑IP设为192.168.10.*即可。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/simens/ip1.png" alt="simens"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/simens/ip2.png" alt="simens"></p>
+<p>将云BOX的IP配置与PLC的网段一样，PLC的IP地址：192.168.0.1。关闭DHCP（配置完保存）</p>
+<p>（注意云BOX的IP地址与PLC的地址不要设置成一样，造成IP地址冲突）<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/simens/ip3.png" alt="simens"></p>
+<p>保存完后重新启动模块。</p>
+<p>###1.3平台连接</p>
+<p>用申请的账户登录云平台，登录地址：<a href="http://cloud.ecsiot.com" target="_blank" rel="noopener">http://cloud.ecsiot.com</a></p>
+<p>进入云平台之后，点击“项目中心”–页面左下角的“添加项目”<br>输入： 1. 项目名称； 2. 地理位置（可选项）</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/simens/location.png" alt="simens"></p>
+<p>###1.4ECSManager软件配置</p>
+<p>打开ECSManger软件点击：新建–右键 BOX 列表–添加 BOX。</p>
+<p>右键 R232（COM3）→设置串口参数。</p>
+<p>右键设备名称或空白处→添加变量→根据设备内变量使用情况创建。也可以通过 excel 导入、导出变量。变量可以复制、剪切、粘贴，方法与 office 一致，可以右键，也可以使用 快捷键，快捷键与 office 一致。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/simens/peizhi.png" alt="simens"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/simens/jk.png" alt="simens"></p>
+<p>####1.5ECSManager软件配置下载</p>
+<p>点击下载至BOX，IP地址填写模块LAN口的IP。然后点击连接即可将参数下载至模块，下载完成后点击确定即可。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/simens/downbox.png" alt="simens"></p>
+<p>将配置信息上传到云端，以便云平台能够读取PLC变量参数并调用。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/simens/cloudbox.png" alt="simens"></p>
+<p>在平台中可以查看效果如下</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="png/simens/pingtai.png" alt="simens"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-scada_help" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/scada-help/index.html" class="article-date">
+      <time datetime="2019-11-15T05:50:06.000Z" itemprop="datePublished">2019-11-15</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/scada-help/index.html">scada_help</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>#画面组态手册</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>保证云平台实时数据正常。</li>
+<li>下载google、360、搜狗浏览器。</li>
+<li>画面是自适应大小的，如果宽度布满屏幕，就以宽度为最大缩放比例；如果长度最先布满屏幕，就以长度为最大缩放比例。</li>
+</ul>
+<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><ul>
+<li><p>普通画面：常用的画面类型；</p>
+</li>
+<li><p>弹出式画面：在普通画面中通过点击按钮，弹出的画面（暂时不建议使用，后期完善）；</p>
+</li>
+</ul>
+<h2 id="功能使用"><a href="#功能使用" class="headerlink" title="功能使用"></a>功能使用</h2><h3 id="插入背景图片"><a href="#插入背景图片" class="headerlink" title="插入背景图片"></a>插入背景图片</h3><p><img src="gif/sctp.gif" alt="插入背景图片"></p>
+<h3 id="设置背景色"><a href="#设置背景色" class="headerlink" title="设置背景色"></a>设置背景色</h3><p><img src="gif/bjsz.gif" alt="设置背景图片"></p>
+<h3 id="插入静态文本"><a href="#插入静态文本" class="headerlink" title="插入静态文本"></a>插入静态文本</h3><p><img src="gif/jtwb.gif" alt="设置背景图片"></p>
+<h3 id="显示变量数值"><a href="#显示变量数值" class="headerlink" title="显示变量数值"></a>显示变量数值</h3><p><img src="gif/xsbl.gif" alt="设置背景图片"></p>
+<h3 id="控制变量"><a href="#控制变量" class="headerlink" title="控制变量"></a>控制变量</h3><p><img src="gif/xrbl.gif" alt="设置背景图片"></p>
+<h3 id="显示动态文本"><a href="#显示动态文本" class="headerlink" title="显示动态文本"></a>显示动态文本</h3><p>动态文本：就是根据变量的不同数值，显示不同的文字。例如：1显示”自动”,0显示”手动”<br><img src="gif/dtwb.gif" alt="设置背景图片"></p>
+<h3 id="指示灯"><a href="#指示灯" class="headerlink" title="指示灯"></a>指示灯</h3><ol>
+<li>用多个图形表示一个变量的状态<br><img src="gif/zsd.gif" alt="设置背景图片"></li>
+<li>通过颜色来显示<br><img src="gif/zsd01.gif" alt="设置背景图片"></li>
+</ol>
+<h3 id="按钮控制"><a href="#按钮控制" class="headerlink" title="按钮控制"></a>按钮控制</h3><p>通过按钮控制某一个变量，可以置位、复位、取反、<br> <img src="gif/kzbl01.gif" alt="设置背景图片"></p>
+<h3 id="多状态控制"><a href="#多状态控制" class="headerlink" title="多状态控制"></a>多状态控制</h3><p>多态开关，不同的开关控制写入不同的数值。<br> <img src="gif/dztkz.gif" alt="设置背景图片"></p>
+<h3 id="图形变色"><a href="#图形变色" class="headerlink" title="图形变色"></a>图形变色</h3><p>一个圆形：为1：显示绿色；2：显示红色；3：显示黄色<br><img src="gif/txbs.gif" alt="设置背景图片"></p>
+<h3 id="棒图"><a href="#棒图" class="headerlink" title="棒图"></a>棒图</h3><p>可以设置棒图的，边框颜色、文本颜色、刻度等等参数<br><img src="gif/bt.gif" alt="设置背景图片"></p>
+<h3 id="仪表盘"><a href="#仪表盘" class="headerlink" title="仪表盘"></a>仪表盘</h3><p><img src="gif/ybp.gif" alt="设置背景图片"></p>
+<h3 id="数码管"><a href="#数码管" class="headerlink" title="数码管"></a>数码管</h3><p><img src="gif/smg.gif" alt="设置背景图片"></p>
+<h3 id="实时曲线"><a href="#实时曲线" class="headerlink" title="实时曲线"></a>实时曲线</h3><p>显示曲线的实时变化趋势。</p>
+<pre><code>数据监控--实时数据--选择曲线需要的变量--收藏--组态编辑中选择实时曲线控件--选择曲线收藏文件名--设置变量颜色</code></pre><p><img src="gif/cloud_help/ssqx.gif" alt="实时曲线"></p>
+<h3 id="历史曲线"><a href="#历史曲线" class="headerlink" title="历史曲线"></a>历史曲线</h3><p>可以显示当前一天，一周，一个月的趋势曲线，如果前面已经收藏过历史曲线变量，不需要在收藏，直接在历史曲线控件中调用即可。</p>
+<pre><code>数据监控--实时数据--选择曲线需要的变量--收藏--组态编辑中选择历史曲线控件--选择曲线收藏文件名--设置变量颜色</code></pre><p><img src="gif/cloud_help/lsqx.gif" alt="历史曲线"></p>
+<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>可以链接第三方网站<br><img src="gif/clj.gif" alt="设置背景图片"></p>
+<h3 id="水流效果"><a href="#水流效果" class="headerlink" title="水流效果"></a>水流效果</h3><p><img src="gif/slxg.gif" alt="设置背景图片"></p>
+<h3 id="自定义图库"><a href="#自定义图库" class="headerlink" title="自定义图库"></a>自定义图库</h3><p>可以上传自定义的图片<br><img src="gif/zdytu.gif" alt="设置背景图片"></p>
+<h3 id="画面跳转"><a href="#画面跳转" class="headerlink" title="画面跳转"></a>画面跳转</h3><p><img src="gif/hmtz.gif" alt="设置背景图片"></p>
+<h3 id="多点控制"><a href="#多点控制" class="headerlink" title="多点控制"></a>多点控制</h3><p><img src="gif/ddkz.gif" alt="设置背景图片"></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2010-2019 Master Liu
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Liu</a> by Masterliu <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+             title: "a.article-title, .article-more-link a", 
+             post: ".article-entry a[href], .copyright a[href]", 
+             tags: ".article-tag a", 
+             categories: ".article-category a, a.tag-list-link", 
+             articleNav: "#article-nav a, #post-nav-button a", 
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
