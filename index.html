@@ -355,10 +355,10 @@
 
 
   
-    <article id="post-index" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-scada_help" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/index/index.html" class="article-date">
+      <a href="/scada-help/index.html" class="article-date">
       <time datetime="2019-11-15T05:50:06.000Z" itemprop="datePublished">2019-11-15</time>
 </a>
 
@@ -374,7 +374,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/index/index.html">index</a>
+      <a class="article-title" href="/scada-help/index.html">scada_help</a>
     </h1>
   
 
@@ -384,78 +384,43 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="云平台连接操作步骤"><a href="#云平台连接操作步骤" class="headerlink" title="云平台连接操作步骤"></a>云平台连接操作步骤</h1><p><img src="png/czlc.png" alt="操作流程"></p>
-<h2 id="申请账户"><a href="#申请账户" class="headerlink" title="申请账户"></a>申请账户</h2><p>云平台账号申请地址：<a href="https://cloud.ecsiot.com" target="_blank" rel="noopener" title="云平台申请地址">https://cloud.ecsiot.com</a></p>
-<p>输入公司信息+账户名+密码+手机验证码，如下图:</p>
-<p><img src="png/cloud/sqzh.png" alt="注册账户"></p>
-<p>点击 “提交申请” ，然后联系销售或者技术支持，予以通过。</p>
-<h2 id="添加项目"><a href="#添加项目" class="headerlink" title="添加项目"></a>添加项目</h2><p>用申请的账户登录云平台，登录地址：<a href="https://cloud.ecsiot.com" target="_blank" rel="noopener" title="云平台登陆地址">https://cloud.ecsiot.com</a></p>
-<pre><code>进入云平台之后，点击“项目中心”--页面左下角的“添加项目”
-
-输入： 1. 项目名称； 2. 地理位置（可选项）</code></pre><p>**新项目默认‘自由项目’即可。如果需要调用已有项目或模板项目，根据需要选择。</p>
-<p>名词解释： </p>
-<pre><code>1，域：选择“默认域”即可。**域的添加请参考！**
-
-2，自由项目：完全创建一个新的空白项目；
-
-3，复制项目：复制一个之前做好的某一个项目
-
-4，模板项目：这个项目关联到某一个模板之上（如果没有使用模板管理功能，忽略此选项）</code></pre><p><img src="gif/cloud/tjxm.gif" alt="添加项目"></p>
-<h2 id="添加变量"><a href="#添加变量" class="headerlink" title="添加变量"></a>添加变量</h2><h3 id="下载ECSManger软件"><a href="#下载ECSManger软件" class="headerlink" title="下载ECSManger软件"></a>下载ECSManger软件</h3><p>下载地址：<a href="http://mcn.ecsiot.com/download/ECSManager.exe" target="_blank" rel="noopener">点击此处下载</a></p>
-<h3 id="安装ECSManager软件"><a href="#安装ECSManager软件" class="headerlink" title="安装ECSManager软件"></a>安装ECSManager软件</h3><pre><code>下载成功--安装完成--登录账户（与云平台账户一致）--选择需要配置的项目</code></pre><p><img src="png/cloud/dlzh.png" alt="登录账户"></p>
-<pre><code>新建--右键BOX列表--添加BOX</code></pre><p>TN310、TN605、TN530、TN630、TN730需要只需选择BOX型号即可。上网方式以及LAN口IP设置需要在网页中配置。</p>
-<p>TN330需要设置上传模式：4G、wifi、以太网三种模式，根据现场实际情况以及BOX支持网络方式填写。</p>
-<p><img src="png/cloud/tjbox.png" alt="添加BOX"></p>
-<p>备注：#的可以不填写，*为必填项</p>
-<h3 id="串口设备"><a href="#串口设备" class="headerlink" title="串口设备"></a><strong>串口设备</strong></h3><p>以三菱FX-2N为例</p>
-<h4 id="设置串口参数"><a href="#设置串口参数" class="headerlink" title="设置串口参数"></a>设置串口参数</h4><pre><code>串口设置操作步骤一样</code></pre><p><img src="png/cloud/szckcs.png" alt="设置串口参数"></p>
-<h4 id="添加设备"><a href="#添加设备" class="headerlink" title="添加设备"></a>添加设备</h4><pre><code>选中RS232单机右键，添加PLC设备</code></pre><p><img src="png/cloud/tjsb.png" alt="添加设备"></p>
-<h4 id="添加变量-1"><a href="#添加变量-1" class="headerlink" title="添加变量"></a>添加变量</h4><pre><code>鼠标选中设备层，空白处单机右键，添加变量</code></pre><p><img src="png/cloud/tjbl.png" alt="添加变量"></p>
-<p>如果需要对变量进行线性变化、报警配置、存储配置、权限配置，点击相应按钮即可。</p>
-<p><img src="png/cloud/tjbl2.png" alt="添加变量2"></p>
-<h3 id="网口设备"><a href="#网口设备" class="headerlink" title="网口设备"></a><strong>网口设备</strong></h3><p>以西门子S7-Smart为例</p>
-<h4 id="设置BOX的IP地址"><a href="#设置BOX的IP地址" class="headerlink" title="设置BOX的IP地址"></a>设置BOX的IP地址</h4><p><strong>当BOX模块为TN-730、TN-630、TN-530、TN-605时，LAN口IP设置：</strong><br><a href="LAN口IP设置.md">请点击此处查看详细操作步骤！</a></p>
-<p><strong>当BOX模块为TN-330时，直接配置WAN口IP即可。</strong></p>
-<p><img src="png/cloud/xgplcip.png" alt="修改PLCip"></p>
-<h4 id="单机右键添加PLC"><a href="#单机右键添加PLC" class="headerlink" title="单机右键添加PLC"></a>单机右键添加PLC</h4><p>根据连接设备选择相应的驱动，如果没有选择Modbus TCP，相应的设备也必须驱动为Moudbus TCP 服务端。<br><img src="png/cloud/tjwkplc.png" alt="添加网口PLC"></p>
-<h4 id="添加变量-2"><a href="#添加变量-2" class="headerlink" title="添加变量"></a>添加变量</h4><p><img src="png/cloud/tjwkbl.png" alt="添加网口变量"></p>
-<h2 id="下载上传配置信息"><a href="#下载上传配置信息" class="headerlink" title="下载上传配置信息"></a>下载上传配置信息</h2><p><strong>远程下载配置信息：</strong><a href="远程连接BOX.md">请点击此处查看详情</a></p>
-<h3 id="下载配置软件"><a href="#下载配置软件" class="headerlink" title="下载配置软件"></a>下载配置软件</h3><p>电脑连接采集器的LAN口IP地址，电脑本地连接的IPV4的IP地址更改为（192.168.10.X）或者更改为自动获取，点击“下载至采集器”，在弹出的对话框中输入BOX模块当前的IP地址（默认为：192.168.10.1）。新建项目会提示保存文件，选择保存，然后继续下载即可。</p>
-<p><img src="png/cloud/xzzbox.png" alt="下载至BOX"></p>
-<p>备注：1：下载的时候会提示采集器序列号为空，属于正常提示   　　2：下载完成之后，采集器系统会初始化，请20s后再连接。</p>
-<h3 id="监视PLC与BOX连接状态"><a href="#监视PLC与BOX连接状态" class="headerlink" title="监视PLC与BOX连接状态"></a>监视PLC与BOX连接状态</h3><p style="color: red;font-size: large;">此步骤一般不用操作</p>
-
-<p>点击“监视”按钮，弹出的对话框输入BOX模块当前的IP地址：（默认：192.168.10.1）</p>
-<p>监视：监视的作用是判断PLC与BOX模块连接通讯是否正常。与模块有网络和云平台没有关系。</p>
-<p><img src="png/cloud/js.png" alt="监视"></p>
-<h3 id="上传至云端"><a href="#上传至云端" class="headerlink" title="上传至云端"></a>上传至云端</h3><p><img src="png/cloud/sczyd.png" alt="上传至云端"></p>
-<h3 id="进入云平台"><a href="#进入云平台" class="headerlink" title="进入云平台"></a>进入云平台</h3><p>支持的浏览器：google、360(极速模式)、搜狗，云平台网址：<a href="cloud.ecsiot.com" title="工业互联云">cloud.ecsiot.com</a></p>
-<pre><code>1. 打开浏览器。
-
-2. 输入网站：cloud.ecsiot.com。
-
-3. 输入账号密码。</code></pre><h2 id="查看BOX状态"><a href="#查看BOX状态" class="headerlink" title="查看BOX状态"></a>查看BOX状态</h2><pre><code>依次点击：项目中心--选择查看项目--数据监控--实时数据，查看数据状态，绿色代表连接正常，红色代表异常。
-
-出现异常查看BOX状态。</code></pre><p><img src="png/cloud/boxblzt.png" alt="BOX变量状态"></p>
-<p><strong>查看BOX状态</strong></p>
-<p>如果“变量信息”的状态显示红色，则查看BOX信息：</p>
-<pre><code>实时状态：                         在线  模块有网络
-
-                                  离线  模块无网络，请确保模块上网（手机卡流量、wifi密码信息、Wan口是否需要设置）
-
-西门子smart（设备名称，各项目不定）： 绿色  BOX与PLC等设备连接正常
-
-                                  红色  BOX与模块通讯异常（确保ECS软件配置的协议或IP与PLC一致）</code></pre><p><img src="png/cloud/boxzt.png" alt="BOX状态"></p>
-<h2 id="组态画面"><a href="#组态画面" class="headerlink" title="组态画面"></a>组态画面</h2><p>画面组态详细操作请前往《云平台画面组态》查看！：<a href="scada_help.md">画面组态详情请点击！</a></p>
-<p>当云平台实时数据监视正常，则开始绘制组态画面</p>
-<p><img src="png/cloud/jrzt.png" alt="进入组态"></p>
-<p>绘制完成之后，选择电脑端的起始画面和手机端的起始画面。</p>
-<p>如果需要将画面某页加入到集中监控中  ，勾选即可。</p>
-<p><img src="png/cloud/hmxz.png" alt="画面选择"></p>
-<h2 id="电脑端查看"><a href="#电脑端查看" class="headerlink" title="电脑端查看"></a>电脑端查看</h2><p><img src="png/pcsbjk.png" alt="电脑端查看"></p>
-<h2 id="手机端查看"><a href="#手机端查看" class="headerlink" title="手机端查看"></a>手机端查看</h2><p>先关注我公司公众号，然后打开微信，找到小程序</p>
-<pre><code>天启工业云--绑定新账户--输入账户名和密码--绑定成功之后--进入项目--选择项目--导航栏选择
-查看即可。</code></pre><p><img src="png/wx/xmxz.png" alt="小程序查看"></p>
+        <p>#画面组态手册</p>
+<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
+<li>保证云平台实时数据正常。</li>
+<li>下载google、360、搜狗浏览器。</li>
+<li>画面是自适应大小的，如果宽度布满屏幕，就以宽度为最大缩放比例；如果长度最先布满屏幕，就以长度为最大缩放比例。</li>
+</ul>
+<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><ul>
+<li><p>普通画面：常用的画面类型；</p>
+</li>
+<li><p>弹出式画面：在普通画面中通过点击按钮，弹出的画面（暂时不建议使用，后期完善）；</p>
+</li>
+</ul>
+<h2 id="功能使用"><a href="#功能使用" class="headerlink" title="功能使用"></a>功能使用</h2><h3 id="插入背景图片"><a href="#插入背景图片" class="headerlink" title="插入背景图片"></a>插入背景图片</h3><p><img src="gif/sctp.gif" alt="插入背景图片"></p>
+<h3 id="设置背景色"><a href="#设置背景色" class="headerlink" title="设置背景色"></a>设置背景色</h3><p><img src="gif/bjsz.gif" alt="设置背景图片"></p>
+<h3 id="插入静态文本"><a href="#插入静态文本" class="headerlink" title="插入静态文本"></a>插入静态文本</h3><p><img src="gif/jtwb.gif" alt="设置背景图片"></p>
+<h3 id="显示变量数值"><a href="#显示变量数值" class="headerlink" title="显示变量数值"></a>显示变量数值</h3><p><img src="gif/xsbl.gif" alt="设置背景图片"></p>
+<h3 id="控制变量"><a href="#控制变量" class="headerlink" title="控制变量"></a>控制变量</h3><p><img src="gif/xrbl.gif" alt="设置背景图片"></p>
+<h3 id="显示动态文本"><a href="#显示动态文本" class="headerlink" title="显示动态文本"></a>显示动态文本</h3><p>动态文本：就是根据变量的不同数值，显示不同的文字。例如：1显示”自动”,0显示”手动”<br><img src="gif/dtwb.gif" alt="设置背景图片"></p>
+<h3 id="指示灯"><a href="#指示灯" class="headerlink" title="指示灯"></a>指示灯</h3><ol>
+<li>用多个图形表示一个变量的状态<br><img src="gif/zsd.gif" alt="设置背景图片"></li>
+<li>通过颜色来显示<br><img src="gif/zsd01.gif" alt="设置背景图片"></li>
+</ol>
+<h3 id="按钮控制"><a href="#按钮控制" class="headerlink" title="按钮控制"></a>按钮控制</h3><p>通过按钮控制某一个变量，可以置位、复位、取反、<br> <img src="gif/kzbl01.gif" alt="设置背景图片"></p>
+<h3 id="多状态控制"><a href="#多状态控制" class="headerlink" title="多状态控制"></a>多状态控制</h3><p>多态开关，不同的开关控制写入不同的数值。<br> <img src="gif/dztkz.gif" alt="设置背景图片"></p>
+<h3 id="图形变色"><a href="#图形变色" class="headerlink" title="图形变色"></a>图形变色</h3><p>一个圆形：为1：显示绿色；2：显示红色；3：显示黄色<br><img src="gif/txbs.gif" alt="设置背景图片"></p>
+<h3 id="棒图"><a href="#棒图" class="headerlink" title="棒图"></a>棒图</h3><p>可以设置棒图的，边框颜色、文本颜色、刻度等等参数<br><img src="gif/bt.gif" alt="设置背景图片"></p>
+<h3 id="仪表盘"><a href="#仪表盘" class="headerlink" title="仪表盘"></a>仪表盘</h3><p><img src="gif/ybp.gif" alt="设置背景图片"></p>
+<h3 id="数码管"><a href="#数码管" class="headerlink" title="数码管"></a>数码管</h3><p><img src="gif/smg.gif" alt="设置背景图片"></p>
+<h3 id="实时曲线"><a href="#实时曲线" class="headerlink" title="实时曲线"></a>实时曲线</h3><p>显示曲线的实时变化趋势。</p>
+<pre><code>数据监控--实时数据--选择曲线需要的变量--收藏--组态编辑中选择实时曲线控件--选择曲线收藏文件名--设置变量颜色</code></pre><p><img src="gif/cloud_help/ssqx.gif" alt="实时曲线"></p>
+<h3 id="历史曲线"><a href="#历史曲线" class="headerlink" title="历史曲线"></a>历史曲线</h3><p>可以显示当前一天，一周，一个月的趋势曲线，如果前面已经收藏过历史曲线变量，不需要在收藏，直接在历史曲线控件中调用即可。</p>
+<pre><code>数据监控--实时数据--选择曲线需要的变量--收藏--组态编辑中选择历史曲线控件--选择曲线收藏文件名--设置变量颜色</code></pre><p><img src="gif/cloud_help/lsqx.gif" alt="历史曲线"></p>
+<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>可以链接第三方网站<br><img src="gif/clj.gif" alt="设置背景图片"></p>
+<h3 id="水流效果"><a href="#水流效果" class="headerlink" title="水流效果"></a>水流效果</h3><p><img src="gif/slxg.gif" alt="设置背景图片"></p>
+<h3 id="自定义图库"><a href="#自定义图库" class="headerlink" title="自定义图库"></a>自定义图库</h3><p>可以上传自定义的图片<br><img src="gif/zdytu.gif" alt="设置背景图片"></p>
+<h3 id="画面跳转"><a href="#画面跳转" class="headerlink" title="画面跳转"></a>画面跳转</h3><p><img src="gif/hmtz.gif" alt="设置背景图片"></p>
+<h3 id="多点控制"><a href="#多点控制" class="headerlink" title="多点控制"></a>多点控制</h3><p><img src="gif/ddkz.gif" alt="设置背景图片"></p>
 
       
     </div>
@@ -568,10 +533,10 @@
 
 
   
-    <article id="post-scada_help" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-index" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/scada-help/index.html" class="article-date">
+      <a href="/index/index.html" class="article-date">
       <time datetime="2019-11-15T05:50:06.000Z" itemprop="datePublished">2019-11-15</time>
 </a>
 
@@ -587,7 +552,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/scada-help/index.html">scada_help</a>
+      <a class="article-title" href="/index/index.html">index</a>
     </h1>
   
 
@@ -597,43 +562,78 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>#画面组态手册</p>
-<h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
-<li>保证云平台实时数据正常。</li>
-<li>下载google、360、搜狗浏览器。</li>
-<li>画面是自适应大小的，如果宽度布满屏幕，就以宽度为最大缩放比例；如果长度最先布满屏幕，就以长度为最大缩放比例。</li>
-</ul>
-<h2 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h2><ul>
-<li><p>普通画面：常用的画面类型；</p>
-</li>
-<li><p>弹出式画面：在普通画面中通过点击按钮，弹出的画面（暂时不建议使用，后期完善）；</p>
-</li>
-</ul>
-<h2 id="功能使用"><a href="#功能使用" class="headerlink" title="功能使用"></a>功能使用</h2><h3 id="插入背景图片"><a href="#插入背景图片" class="headerlink" title="插入背景图片"></a>插入背景图片</h3><p><img src="gif/sctp.gif" alt="插入背景图片"></p>
-<h3 id="设置背景色"><a href="#设置背景色" class="headerlink" title="设置背景色"></a>设置背景色</h3><p><img src="gif/bjsz.gif" alt="设置背景图片"></p>
-<h3 id="插入静态文本"><a href="#插入静态文本" class="headerlink" title="插入静态文本"></a>插入静态文本</h3><p><img src="gif/jtwb.gif" alt="设置背景图片"></p>
-<h3 id="显示变量数值"><a href="#显示变量数值" class="headerlink" title="显示变量数值"></a>显示变量数值</h3><p><img src="gif/xsbl.gif" alt="设置背景图片"></p>
-<h3 id="控制变量"><a href="#控制变量" class="headerlink" title="控制变量"></a>控制变量</h3><p><img src="gif/xrbl.gif" alt="设置背景图片"></p>
-<h3 id="显示动态文本"><a href="#显示动态文本" class="headerlink" title="显示动态文本"></a>显示动态文本</h3><p>动态文本：就是根据变量的不同数值，显示不同的文字。例如：1显示”自动”,0显示”手动”<br><img src="gif/dtwb.gif" alt="设置背景图片"></p>
-<h3 id="指示灯"><a href="#指示灯" class="headerlink" title="指示灯"></a>指示灯</h3><ol>
-<li>用多个图形表示一个变量的状态<br><img src="gif/zsd.gif" alt="设置背景图片"></li>
-<li>通过颜色来显示<br><img src="gif/zsd01.gif" alt="设置背景图片"></li>
-</ol>
-<h3 id="按钮控制"><a href="#按钮控制" class="headerlink" title="按钮控制"></a>按钮控制</h3><p>通过按钮控制某一个变量，可以置位、复位、取反、<br> <img src="gif/kzbl01.gif" alt="设置背景图片"></p>
-<h3 id="多状态控制"><a href="#多状态控制" class="headerlink" title="多状态控制"></a>多状态控制</h3><p>多态开关，不同的开关控制写入不同的数值。<br> <img src="gif/dztkz.gif" alt="设置背景图片"></p>
-<h3 id="图形变色"><a href="#图形变色" class="headerlink" title="图形变色"></a>图形变色</h3><p>一个圆形：为1：显示绿色；2：显示红色；3：显示黄色<br><img src="gif/txbs.gif" alt="设置背景图片"></p>
-<h3 id="棒图"><a href="#棒图" class="headerlink" title="棒图"></a>棒图</h3><p>可以设置棒图的，边框颜色、文本颜色、刻度等等参数<br><img src="gif/bt.gif" alt="设置背景图片"></p>
-<h3 id="仪表盘"><a href="#仪表盘" class="headerlink" title="仪表盘"></a>仪表盘</h3><p><img src="gif/ybp.gif" alt="设置背景图片"></p>
-<h3 id="数码管"><a href="#数码管" class="headerlink" title="数码管"></a>数码管</h3><p><img src="gif/smg.gif" alt="设置背景图片"></p>
-<h3 id="实时曲线"><a href="#实时曲线" class="headerlink" title="实时曲线"></a>实时曲线</h3><p>显示曲线的实时变化趋势。</p>
-<pre><code>数据监控--实时数据--选择曲线需要的变量--收藏--组态编辑中选择实时曲线控件--选择曲线收藏文件名--设置变量颜色</code></pre><p><img src="gif/cloud_help/ssqx.gif" alt="实时曲线"></p>
-<h3 id="历史曲线"><a href="#历史曲线" class="headerlink" title="历史曲线"></a>历史曲线</h3><p>可以显示当前一天，一周，一个月的趋势曲线，如果前面已经收藏过历史曲线变量，不需要在收藏，直接在历史曲线控件中调用即可。</p>
-<pre><code>数据监控--实时数据--选择曲线需要的变量--收藏--组态编辑中选择历史曲线控件--选择曲线收藏文件名--设置变量颜色</code></pre><p><img src="gif/cloud_help/lsqx.gif" alt="历史曲线"></p>
-<h3 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h3><p>可以链接第三方网站<br><img src="gif/clj.gif" alt="设置背景图片"></p>
-<h3 id="水流效果"><a href="#水流效果" class="headerlink" title="水流效果"></a>水流效果</h3><p><img src="gif/slxg.gif" alt="设置背景图片"></p>
-<h3 id="自定义图库"><a href="#自定义图库" class="headerlink" title="自定义图库"></a>自定义图库</h3><p>可以上传自定义的图片<br><img src="gif/zdytu.gif" alt="设置背景图片"></p>
-<h3 id="画面跳转"><a href="#画面跳转" class="headerlink" title="画面跳转"></a>画面跳转</h3><p><img src="gif/hmtz.gif" alt="设置背景图片"></p>
-<h3 id="多点控制"><a href="#多点控制" class="headerlink" title="多点控制"></a>多点控制</h3><p><img src="gif/ddkz.gif" alt="设置背景图片"></p>
+        <h1 id="云平台连接操作步骤"><a href="#云平台连接操作步骤" class="headerlink" title="云平台连接操作步骤"></a>云平台连接操作步骤</h1><p><img src="png/czlc.png" alt="操作流程"></p>
+<h2 id="申请账户"><a href="#申请账户" class="headerlink" title="申请账户"></a>申请账户</h2><p>云平台账号申请地址：<a href="https://cloud.ecsiot.com" target="_blank" rel="noopener" title="云平台申请地址">https://cloud.ecsiot.com</a></p>
+<p>输入公司信息+账户名+密码+手机验证码，如下图:</p>
+<p><img src="png/cloud/sqzh.png" alt="注册账户"></p>
+<p>点击 “提交申请” ，然后联系销售或者技术支持，予以通过。</p>
+<h2 id="添加项目"><a href="#添加项目" class="headerlink" title="添加项目"></a>添加项目</h2><p>用申请的账户登录云平台，登录地址：<a href="https://cloud.ecsiot.com" target="_blank" rel="noopener" title="云平台登陆地址">https://cloud.ecsiot.com</a></p>
+<pre><code>进入云平台之后，点击“项目中心”--页面左下角的“添加项目”
+
+输入： 1. 项目名称； 2. 地理位置（可选项）</code></pre><p>**新项目默认‘自由项目’即可。如果需要调用已有项目或模板项目，根据需要选择。</p>
+<p>名词解释： </p>
+<pre><code>1，域：选择“默认域”即可。**域的添加请参考！**
+
+2，自由项目：完全创建一个新的空白项目；
+
+3，复制项目：复制一个之前做好的某一个项目
+
+4，模板项目：这个项目关联到某一个模板之上（如果没有使用模板管理功能，忽略此选项）</code></pre><p><img src="gif/cloud/tjxm.gif" alt="添加项目"></p>
+<h2 id="添加变量"><a href="#添加变量" class="headerlink" title="添加变量"></a>添加变量</h2><h3 id="下载ECSManger软件"><a href="#下载ECSManger软件" class="headerlink" title="下载ECSManger软件"></a>下载ECSManger软件</h3><p>下载地址：<a href="http://mcn.ecsiot.com/download/ECSManager.exe" target="_blank" rel="noopener">点击此处下载</a></p>
+<h3 id="安装ECSManager软件"><a href="#安装ECSManager软件" class="headerlink" title="安装ECSManager软件"></a>安装ECSManager软件</h3><pre><code>下载成功--安装完成--登录账户（与云平台账户一致）--选择需要配置的项目</code></pre><p><img src="png/cloud/dlzh.png" alt="登录账户"></p>
+<pre><code>新建--右键BOX列表--添加BOX</code></pre><p>TN310、TN605、TN530、TN630、TN730需要只需选择BOX型号即可。上网方式以及LAN口IP设置需要在网页中配置。</p>
+<p>TN330需要设置上传模式：4G、wifi、以太网三种模式，根据现场实际情况以及BOX支持网络方式填写。</p>
+<p><img src="png/cloud/tjbox.png" alt="添加BOX"></p>
+<p>备注：#的可以不填写，*为必填项</p>
+<h3 id="串口设备"><a href="#串口设备" class="headerlink" title="串口设备"></a><strong>串口设备</strong></h3><p>以三菱FX-2N为例</p>
+<h4 id="设置串口参数"><a href="#设置串口参数" class="headerlink" title="设置串口参数"></a>设置串口参数</h4><pre><code>串口设置操作步骤一样</code></pre><p><img src="png/cloud/szckcs.png" alt="设置串口参数"></p>
+<h4 id="添加设备"><a href="#添加设备" class="headerlink" title="添加设备"></a>添加设备</h4><pre><code>选中RS232单机右键，添加PLC设备</code></pre><p><img src="png/cloud/tjsb.png" alt="添加设备"></p>
+<h4 id="添加变量-1"><a href="#添加变量-1" class="headerlink" title="添加变量"></a>添加变量</h4><pre><code>鼠标选中设备层，空白处单机右键，添加变量</code></pre><p><img src="png/cloud/tjbl.png" alt="添加变量"></p>
+<p>如果需要对变量进行线性变化、报警配置、存储配置、权限配置，点击相应按钮即可。</p>
+<p><img src="png/cloud/tjbl2.png" alt="添加变量2"></p>
+<h3 id="网口设备"><a href="#网口设备" class="headerlink" title="网口设备"></a><strong>网口设备</strong></h3><p>以西门子S7-Smart为例</p>
+<h4 id="设置BOX的IP地址"><a href="#设置BOX的IP地址" class="headerlink" title="设置BOX的IP地址"></a>设置BOX的IP地址</h4><p><strong>当BOX模块为TN-730、TN-630、TN-530、TN-605时，LAN口IP设置：</strong><br><a href="LAN口IP设置.md">请点击此处查看详细操作步骤！</a></p>
+<p><strong>当BOX模块为TN-330时，直接配置WAN口IP即可。</strong></p>
+<p><img src="png/cloud/xgplcip.png" alt="修改PLCip"></p>
+<h4 id="单机右键添加PLC"><a href="#单机右键添加PLC" class="headerlink" title="单机右键添加PLC"></a>单机右键添加PLC</h4><p>根据连接设备选择相应的驱动，如果没有选择Modbus TCP，相应的设备也必须驱动为Moudbus TCP 服务端。<br><img src="png/cloud/tjwkplc.png" alt="添加网口PLC"></p>
+<h4 id="添加变量-2"><a href="#添加变量-2" class="headerlink" title="添加变量"></a>添加变量</h4><p><img src="png/cloud/tjwkbl.png" alt="添加网口变量"></p>
+<h2 id="下载上传配置信息"><a href="#下载上传配置信息" class="headerlink" title="下载上传配置信息"></a>下载上传配置信息</h2><p><strong>远程下载配置信息：</strong><a href="远程连接BOX.md">请点击此处查看详情</a></p>
+<h3 id="下载配置软件"><a href="#下载配置软件" class="headerlink" title="下载配置软件"></a>下载配置软件</h3><p>电脑连接采集器的LAN口IP地址，电脑本地连接的IPV4的IP地址更改为（192.168.10.X）或者更改为自动获取，点击“下载至采集器”，在弹出的对话框中输入BOX模块当前的IP地址（默认为：192.168.10.1）。新建项目会提示保存文件，选择保存，然后继续下载即可。</p>
+<p><img src="png/cloud/xzzbox.png" alt="下载至BOX"></p>
+<p>备注：1：下载的时候会提示采集器序列号为空，属于正常提示   　　2：下载完成之后，采集器系统会初始化，请20s后再连接。</p>
+<h3 id="监视PLC与BOX连接状态"><a href="#监视PLC与BOX连接状态" class="headerlink" title="监视PLC与BOX连接状态"></a>监视PLC与BOX连接状态</h3><p style="color: red;font-size: large;">此步骤一般不用操作</p>
+
+<p>点击“监视”按钮，弹出的对话框输入BOX模块当前的IP地址：（默认：192.168.10.1）</p>
+<p>监视：监视的作用是判断PLC与BOX模块连接通讯是否正常。与模块有网络和云平台没有关系。</p>
+<p><img src="png/cloud/js.png" alt="监视"></p>
+<h3 id="上传至云端"><a href="#上传至云端" class="headerlink" title="上传至云端"></a>上传至云端</h3><p><img src="png/cloud/sczyd.png" alt="上传至云端"></p>
+<h3 id="进入云平台"><a href="#进入云平台" class="headerlink" title="进入云平台"></a>进入云平台</h3><p>支持的浏览器：google、360(极速模式)、搜狗，云平台网址：<a href="cloud.ecsiot.com" title="工业互联云">cloud.ecsiot.com</a></p>
+<pre><code>1. 打开浏览器。
+
+2. 输入网站：cloud.ecsiot.com。
+
+3. 输入账号密码。</code></pre><h2 id="查看BOX状态"><a href="#查看BOX状态" class="headerlink" title="查看BOX状态"></a>查看BOX状态</h2><pre><code>依次点击：项目中心--选择查看项目--数据监控--实时数据，查看数据状态，绿色代表连接正常，红色代表异常。
+
+出现异常查看BOX状态。</code></pre><p><img src="png/cloud/boxblzt.png" alt="BOX变量状态"></p>
+<p><strong>查看BOX状态</strong></p>
+<p>如果“变量信息”的状态显示红色，则查看BOX信息：</p>
+<pre><code>实时状态：                         在线  模块有网络
+
+                                  离线  模块无网络，请确保模块上网（手机卡流量、wifi密码信息、Wan口是否需要设置）
+
+西门子smart（设备名称，各项目不定）： 绿色  BOX与PLC等设备连接正常
+
+                                  红色  BOX与模块通讯异常（确保ECS软件配置的协议或IP与PLC一致）</code></pre><p><img src="png/cloud/boxzt.png" alt="BOX状态"></p>
+<h2 id="组态画面"><a href="#组态画面" class="headerlink" title="组态画面"></a>组态画面</h2><p>画面组态详细操作请前往《云平台画面组态》查看！：<a href="scada_help.md">画面组态详情请点击！</a></p>
+<p>当云平台实时数据监视正常，则开始绘制组态画面</p>
+<p><img src="png/cloud/jrzt.png" alt="进入组态"></p>
+<p>绘制完成之后，选择电脑端的起始画面和手机端的起始画面。</p>
+<p>如果需要将画面某页加入到集中监控中  ，勾选即可。</p>
+<p><img src="png/cloud/hmxz.png" alt="画面选择"></p>
+<h2 id="电脑端查看"><a href="#电脑端查看" class="headerlink" title="电脑端查看"></a>电脑端查看</h2><p><img src="png/pcsbjk.png" alt="电脑端查看"></p>
+<h2 id="手机端查看"><a href="#手机端查看" class="headerlink" title="手机端查看"></a>手机端查看</h2><p>先关注我公司公众号，然后打开微信，找到小程序</p>
+<pre><code>天启工业云--绑定新账户--输入账户名和密码--绑定成功之后--进入项目--选择项目--导航栏选择
+查看即可。</code></pre><p><img src="png/wx/xmxz.png" alt="小程序查看"></p>
 
       
     </div>
